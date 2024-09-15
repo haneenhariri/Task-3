@@ -2,20 +2,21 @@ import { navData } from "../../data/nav"
 import './SideBar.css'
 import ScheduleBtn from "../ScheduleBtn/ScheduleBtn"
 import { infoData, infoIcon } from "../../data/info"
+import { Link } from "react-router-dom"
 export default function SideBar({ isOpen, toggleSidebar }) {
   return (
     <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div>
         <div className="nav-head head-side">
             <h3>VILLA</h3>
-            <a href=""  onClick={(e) => { e.preventDefault(); toggleSidebar(); }}><img className="close" src="./imag/NavIcon/xmark-solid.svg" alt="close" /></a>
+            <Link to=""  onClick={(e) => { e.preventDefault(); toggleSidebar(); }}><img className="close" src="./imag/NavIcon/xmark-solid.svg" alt="close" /></Link>
         </div>
          <ul className=' ul-side'>
             {navData.map(index =>
                 {
                     return(
                         <li className=' li-side' key={index.id}>
-                            <a className='nav-link' href={index.link}>{index.title}</a>
+                            <Link className='nav-link' to={index.link}>{index.title}</Link>
                         </li>
                     )
                 }
@@ -28,10 +29,10 @@ export default function SideBar({ isOpen, toggleSidebar }) {
             <div className='info info-side'>
                 {infoData.map(i=>{
                     return(
-                        <a href={i.href} key={i.id} className='info-link'>
+                        <Link to={i.href} key={i.id} className='info-link'>
                             <img src={i.icon} alt={i.infoTitle} className='info-icon' />
                             <span>{i.infoTitle}</span>
-                        </a>
+                        </Link>
                     )
                 })}
             </div>
@@ -41,9 +42,9 @@ export default function SideBar({ isOpen, toggleSidebar }) {
                 {
                     return(
                         <div className='social-icon'  key={j.id}>
-                            <a href={j.href} className='link'>
+                            <Link to={j.href} className='link'>
                                 <img src={j.icon} alt={j.socIcon} />
-                            </a>
+                            </Link>
                         </div>
                     )
                 }
