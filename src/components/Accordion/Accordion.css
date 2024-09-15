@@ -39,6 +39,12 @@
 }
 @media (max-width:576px) and (min-width:300px)
 {
+    .accordion
+    {
+        background-color: #fafafa;
+        border-radius: 7px;
+        width: 100%;
+    }
     .accordion-item .accordion-head 
     {
         padding: 10px 15px;

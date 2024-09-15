@@ -27,4 +27,11 @@
 {
     color: gray;
 }
-
+@media (max-width:576px) and (min-width:300px)
+{
+    .cont-card
+    {
+        width: 100%;
+        padding: 20px 15px;
+    }
+}
