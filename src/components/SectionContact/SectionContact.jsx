@@ -15,11 +15,11 @@ export default function SectionContact() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quos minus tempore, ipsa accusamus ducimus distinctio cum numquam deserunt. Minima assumenda qui laboriosam veniam asperiores, itaque voluptatum. Non, aspernatur quasi.
           </p>
           <div className='conCardInfo'>
-            <ContCard imgCon={"imag/ContactIcon/phone-icon.png"}
+            <ContCard imgCon={"./imag/ContactIcon/phone-icon.png"}
             hrefCon={'010-020-0340'}
             spanCon={'Phone Number'}
             />
-            <ContCard imgCon={"/imag/ContactIcon/email-icon.png"}
+            <ContCard imgCon={"./email-icon.png"}
             hrefCon={'info@villa.com'}
             spanCon={'Business Email'}
             />  
