@@ -5,6 +5,7 @@ import Hero from "../../components/Hero/Hero";
 import OrangCard from "../../components/OrangCard/OrangCard";
 import ViewSection from "../../components/ViewSection/ViewSection";
 import Properties from "../../components/Properties/Properties";
+import { Outlet } from "react-router";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
        <Best/>
        <Properties/>
        <Contact/>
+       <Outlet/>
     </>
   )
 }
