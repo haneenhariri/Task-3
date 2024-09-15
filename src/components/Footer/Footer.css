@@ -9,3 +9,9 @@
     font-size: 12px;
     text-align: center;
 }
+.footer a
+{
+    text-decoration: none;
+    color: #f35525;
+    margin: 0 5px;
+}
