@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer.jsx';
 import App from './App.jsx';
 import PropertyPage from './pages/PropertyPage/PropertyPage.jsx';
 
+
 const routers = createBrowserRouter(
   [
     {
@@ -23,7 +24,6 @@ const routers = createBrowserRouter(
         {
           path : '/',
           element:<Home/>
-
         },
         /* Properties path */
         {
@@ -42,12 +42,14 @@ const routers = createBrowserRouter(
         }
       ]
     },
-
-  ]
+  ],
+  
+  { basename: "/Task-3" } 
 )
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router ={routers}/>
+    <RouterProvider router={routers}/>
     <Footer/>
   </StrictMode>,
 )
