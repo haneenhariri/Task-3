@@ -7,7 +7,7 @@ import App from './App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Task-3">
+    <BrowserRouter basename="/Task-3/">
       <App/>
     </BrowserRouter>
 

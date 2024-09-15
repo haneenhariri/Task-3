@@ -21,11 +21,10 @@ function App() {
       <NavBar toggleSidebar={toggleSidebar}/>
       <SideBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Routes>
-        <Route path='/Task-3' element={ <Home /> }/>
+        <Route path='/' element={ <Home /> }/>
         <Route path='/properties' element={ <PropertyPage /> }/>
         <Route path='/property' element={ <PropertyDetails /> }/>
         <Route path='/contact' element={ <ContactUs /> }/>
-
       </Routes>
       <Footer/>
 
