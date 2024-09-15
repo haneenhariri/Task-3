@@ -44,7 +44,7 @@ const routers = createBrowserRouter(
     },
   ],
   
-  { basename: "/Task-3" } 
+  { basename: "/Task-3/" } 
 )
 
 createRoot(document.getElementById('root')).render(
